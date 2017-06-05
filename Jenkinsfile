@@ -4,7 +4,7 @@ agent any
           stage('Build') {
               steps {
                   echo 'Planning..'
-                  terraform plan
+                  sh 'terraform plan'
 } }
           stage('Test') {
               steps {
