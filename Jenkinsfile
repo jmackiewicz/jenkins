@@ -3,7 +3,8 @@ agent any
       stages {
           stage('Build') {
               steps {
-                  echo 'Building..'
+                  echo 'Planning..'
+                  terraform plan
 } }
           stage('Test') {
               steps {
