@@ -4,7 +4,7 @@ agent any
           stage('Build') {
               steps {
                   echo 'Planning..'
-                  sh '/usr/share/local/terraform plan'
+                  sh '/usr/local/bin/terraform plan'
 } }
           stage('Test') {
               steps {
